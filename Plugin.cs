@@ -156,7 +156,7 @@ namespace OopsAllLalafells
                 if (actor != null &&
                     (actor.ObjectId != CHARA_WINDOW_ACTOR_ID || this.config.ImmersiveMode)
                     && this.clientState.LocalPlayer != null
-                    && actor.ObjectId != this.clientState.LocalPlayer.ObjectId
+                    && actor.ObjectId == this.clientState.LocalPlayer.ObjectId
                     && this.config.ShouldChangeOthers)
                 {
                     this.ChangeRace(customizeDataPtr, this.config.ChangeOthersTargetRace);
